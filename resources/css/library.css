@@ -1,0 +1,82 @@
+/**
+ * @Author: schwarze_falke
+ * @Date:   2018-11-12T02:03:37-06:00
+ * @Last modified by:   schwarze_falke
+ * @Last modified time: 2018-11-12T02:03:40-06:00
+ */
+
+ .btn-blue {
+   min-width: 150px;
+   padding: 3px 35px;
+   text-align: center;
+   background: #0f2970;
+   border: 1px solid;
+   border-radius: 5px;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   letter-spacing: 1px;
+   position: relative;
+ }
+ .btn-blue:hover {
+   background: #0f2970b3;
+   text-decoration: none;
+ }
+
+
+ .btn-orange {
+   min-width:  150px;
+   padding: 3px 35px;
+   text-align: center;
+   background: #f16430;
+   border: 1px solid;
+   border-radius: 5px;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   letter-spacing: 1px;
+   position: relative;
+ }
+ .btn-orange:hover {
+   background: #f16430a3;
+   text-decoration: none;
+ }
+
+
+ .btn-green {
+   min-width:  150px;
+   padding: 3px 35px;
+   text-align: center;
+   background: #68d242;
+   border: 1px solid;
+   border-radius: 5px;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   letter-spacing: 1px;
+   position: relative;
+ }
+ .btn-green:hover {
+   background: #68d2428f;
+   text-decoration: none;
+ }
+
+ .ipt-blue {
+   text-align: center;
+   background: #0f2970;
+   border: 1px solid;
+   border-radius: 5px;
+   color: #fff;
+ }
+
+ .ipt-orange {
+   text-align: center;
+   background: #f16430;
+   border: 1px solid;
+   border-radius: 5px;
+   color: #fff;
+ }
+
+ .ocultar {
+   visibility: hidden;
+ }
