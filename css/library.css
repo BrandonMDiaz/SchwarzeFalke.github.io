@@ -2,7 +2,7 @@
  * @Author: schwarze_falke
  * @Date:   2018-11-12T02:03:37-06:00
  * @Last modified by:   schwarze_falke
- * @Last modified time: 2018-11-13T00:42:22-06:00
+ * @Last modified time: 2018-11-13T00:47:47-06:00
  */
 
  /* The Modal (background) */
@@ -59,16 +59,13 @@
   margin: 0;
   padding: 0;
 }
-
-/**
- * Tabs object.
- *
- * 1. Tables (kinda) for layout!
- * 2. This is the magic bit; make all children occupy equal width.
- * 3. Required to make the tabs fill their container.
- * 4. Make each tab pack up horizontally.
- * 5. Ensure the hit area covers the whole tab.
- */
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
 .tabs {
     display: table; /* [1] */
 
