@@ -10,49 +10,99 @@
 
 <body>
   <header>
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="img/logo.png" alt="QCI Ayuda logo">
-    </div>
-
-
+    </div> -->
     <nav class="nav-collapse" role="navigation">
+      <a class="brand" style="margin: 0; float: none; text-align:center" href="#">
+        <img src="img/logo.png" /></a>
       <ul class="tabs primary-nav">
         <li class="tabs__item">
-          <a href="#" class="tabs__link">Home</a>
+          <a href="#" class="tabs__link">Foro</a>
         </li>
         <li class="tabs__item">
-          <a href="#" class="tabs__link">Talks</a>
+          <a href="#" class="tabs__link">Mapa del CU</a>
         </li>
         <li class="tabs__item">
-          <a href="#" class="tabs__link">Schedule</a>
+          <a href="#" class="tabs__link">Horarios</a>
         </li>
         <li class="tabs__item">
-          <a href="#" class="tabs__link">Location</a>
+          <a href="#" class="tabs__link">Ayuda!</a>
         </li>
         <li class="tabs__item">
-          <a href="#" class="tabs__link">Contact</a>
+          <button id="myBtn">Login/Regístrate</button>
         </li>
       </ul>
     </nav>
 
-
-
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
-
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <!-- <div id="myModal" class="modal"> -->
 
       <!-- Modal content -->
-      <div class="modal-content">
+      <!-- <div class="modal-content">
         <span class="close">&times;</span>
         <p>Some text in the Modal..</p>
       </div>
 
-    </div>
+    </div> -->
   </header>
 
   <main>
+    <div class="cotn_principal">
+      <div class="cont_centrar">
+
+        <div class="cont_login">
+          <div class="cont_info_log_sign_up">
+            <div class="col_md_login">
+              <div class="cont_ba_opcitiy">
+
+                <h2>LOGIN</h2>
+                <p>Ingresa con tu cuenta</p>
+                <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+              </div>
+            </div>
+            <div class="col_md_sign_up">
+              <div class="cont_ba_opcitiy">
+                <h2>REGÍSTRATE</h2>
+                <p>¿Eres nuevo? ¡Únete de la discusión!</p>
+                <button class="btn_sign_up" onclick="cambiar_sign_up()">REGISTRARSE</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="cont_back_info">
+            <div class="cont_img_back_grey">
+            </div>
+
+          </div>
+          <div class="cont_forms">
+            <div class="cont_img_back_">
+            </div>
+            <div class="cont_form_login">
+              <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+              <h2>LOGIN</h2>
+              <input type="text" placeholder="Email" />
+              <input type="password" placeholder="Contraseña" />
+              <button class="btn_login" onclick="cambiar_login()">INGRESAR</button>
+            </div>
+
+            <div class="cont_form_sign_up">
+              <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+              <h2>SIGN UP</h2>
+              <input type="text" placeholder="Email" />
+              <input type="text" placeholder="Código de Alumno" />
+              <input type="password" placeholder="Contraseña" />
+              <input type="password" placeholder="Confirmar contraseña" />
+              <button class="btn_sign_up" onclick="cambiar_sign_up()">REGISTRARSE</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>

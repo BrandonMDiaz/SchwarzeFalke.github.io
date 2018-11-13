@@ -2,9 +2,16 @@
  * @Author: schwarze_falke
  * @Date:   2018-11-12T02:03:20-06:00
  * @Last modified by:   schwarze_falke
- * @Last modified time: 2018-11-12T02:04:00-06:00
+ * @Last modified time: 2018-11-12T23:53:54-06:00
  */
- body {
-   margin: 0;
-   padding: 0;
- }
+
+html {
+  margin-top: 50px;
+  background: #FFFF;
+  font: 0.75em/1.5 sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
