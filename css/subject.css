@@ -7,6 +7,7 @@ table{
   width: 95%;
   margin-top: 30px;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 tr, td{
@@ -24,4 +25,32 @@ th{
   border-radius: 15px;
   background-color: rgba(120, 144, 156, 0.55);
   padding: 0.5rem;
+}
+
+.submission{
+  padding: 20px;
+  margin: 20px;
+}
+
+label{
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-shadow: 1px 2px rgba(120, 144, 156, 0.55);
+
+}
+
+#nrc{
+  border-radius: 15px;
+  width: 200px;
+  height: auto;
+}
+
+#send_btn{
+  color: black;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 15px;
+  background-color: rgba(120, 144, 156, 0.55);
 }
