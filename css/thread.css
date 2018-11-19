@@ -1,0 +1,175 @@
+body {
+  background-color: #F5F5F5;
+}
+nav {
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.primary-nav a{
+  background: rgba(0, 0, 0, 0.78);
+  color: #ffffff;
+}
+
+.header {
+  text-align: left;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+.title-forum {
+  text-decoration: none;
+
+  display: inline-block;
+  text-align: left;
+
+}
+.title-forum a {
+  text-decoration: none;
+
+}
+
+.search{
+  margin-left: 55%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  text-align: left;
+}
+
+.cards-deck {
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-flow:wrap;
+  flex-direction: row;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 13%;
+    margin:.5%;
+    margin-top: 2%;
+    min-width: 20%;
+    box-sizing: border-box;
+    background-color: #E2E6FF;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card img{
+  width:50px;
+  height:200px;
+}
+
+.container h4{
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content:center;
+  -webkit-flex-wrap: wrap;
+  flex-flow:wrap;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin:0;
+}
+
+@media screen and (max-width:1200px){
+  .card {
+    width: 20%;
+    margin:1%;
+  }
+
+  .search{
+    margin-left: 45%;
+  }
+}
+
+@media screen and (max-width:1040px){
+  .card {
+    width: 25%;
+    margin: 1%;
+  }
+  .search{
+    display: block;
+    margin-left: 35%;
+  }
+}
+
+
+@media screen and (max-width:900px){
+  .card {
+    width: 25%;
+    margin:3%;
+  }
+  nav ul li:nth-child(2){
+    font-size: 92%;
+  }
+}
+
+@media screen and (max-width:800px){
+  .card {
+    width: 30%;
+    margin:3%;
+  }
+}
+
+@media screen and (max-width:700px){
+  .card {
+    width: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (max-width:500px){
+  .cards-deck {
+    padding: 0%;
+  }
+  .card {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:390px){
+  .cards-deck {
+    padding: 0%;
+  }
+  .card {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header {
+    text-align: center;
+  }
+}

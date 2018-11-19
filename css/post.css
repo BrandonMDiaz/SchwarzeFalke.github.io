@@ -1,0 +1,142 @@
+body {
+  background-color: #F5F5F5;
+  /* background-image: linear-gradient(#50C9C3,#96DEDA); */
+}
+nav {
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.primary-nav a{
+  background: rgba(0, 0, 0, 0.78);
+  color: #ffffff;
+}
+
+.header {
+  text-align: left;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+.title-forum {
+  text-decoration: none;
+
+  display: inline-block;
+  text-align: left;
+
+}
+.title-forum a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* .search{
+  margin-left: 45%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  text-align: left;
+} */
+
+.main-thread{
+  background-color: #ffffff;
+  margin-top: 1%;
+  margin-left:3%;
+  margin-right:3%;
+  margin-bottom:3%;
+  padding: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-thread-header{
+  border-bottom: 2px solid #333;
+}
+.thread{
+  margin-top: 2%;
+  margin: 2%;
+  padding: 2%;
+}
+.thread p{
+  font-size: 20px;
+  text-align: left;
+}
+
+.thread-comment{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  background-color: #D4D5D8;
+}
+
+.thread-comment input[type=text]{
+  width: 95%;
+  padding: 12px 20px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+}
+
+.thread-comment button{
+  margin-bottom:5px;
+  padding: 10px;
+  font-size: 15px;
+  position: relative;
+  left: 39%;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #333;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+.thread-comment button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.thread-post{
+  margin: 2%;
+  margin-top: 3%;
+  border-bottom: 2px solid #333;
+}
+.thread-post *{
+  text-align: left;
+  margin: 2%;
+
+}
+
+.thread-post p{
+  font-size: 20px;
+  margin-top:3%;
+  margin-bottom:3%;
+}
+
+@media screen and (max-width:667px){
+  .thread-comment button{
+    left: 36%;
+  }
+}
+
+@media screen and (max-width:500px){
+  .thread-comment button{
+    left: 30%;
+  }
+}
+
+@media screen and (max-width:350px){
+  .thread-comment button{
+    left: 25%;
+  }
+  .thread-post{
+    margin-top: 10%;
+  }
+}
