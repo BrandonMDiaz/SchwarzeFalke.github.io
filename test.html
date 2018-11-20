@@ -5,113 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/slider.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header class="main-header">
-    <ul class="menu">
-      <li class="menu__item" data-sub="product"><a href="#">Product</a></li>
-      <li class="menu__item" data-sub="developer"><a href="#">Developer</a></li>
-      <li class="menu__item" data-sub="company"><a href="#">Company</a></li>
+
+  <div class="csslider infinity" id="slider1">
+    <input type="radio" name="slides" id="slides_1" />
+    <input type="radio" name="slides" checked="checked" id="slides_2" />
+    <input type="radio" name="slides" id="slides_3" />
+    <input type="radio" name="slides" id="slides_4" />
+    <input type="radio" name="slides" id="slides_5" />
+    <input type="radio" name="slides" id="slides_6" />
+    <ul>
+      <li>
+        <h1>Say hello to CSS3</h1>
+        <p>CSSlider is lightweight & easy to use slider. No JS - pure CSS.</p>
+      </li>
+      <li><img src="https://rawgithub.com/drygiel/csslider/master/examples/themes/stones.jpg" />
+      </li>
+      <li>
+        <div id="bg">
+          <div>
+            <h1>CSS Events</h1>
+            <p>When slide 3 is reached - play CSS animation!</p>
+          </div>
+        </div>
+      </li>
+      <li class="scrollable">
+        <h1>Lots of text</h1>
+        <h2>Scrollable one</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+          semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+          semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+          semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+          semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+          semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+          semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+        </p>
+      </li>
+      <li>
+        <div id="center"> <a class="nice-link" href="https://github.com/drygiel/csslider" data-text="More examples on github" target="_blank">More examples on github</a></div>
+      </li>
+      <li>
+        <div id="center"><a class="play" id="dex-sign" href="http://drygiel.com" target="_blank"></a></div>
+      </li>
     </ul>
-    <div class="dropdown-holder">
-      <div class="dropdown__arrow"></div>
-      <div class="dropdown__bg">
-        <div class="dropdown__bg-bottom"></div>
-      </div>
-      <div class="dropdown__wrap">
-        <div class="dropdown-menu" id="product" data-sub="product">
-          <div class="dropdown-menu__content">
-            <div class="top-section">
-              <div class="col-2">
-                <ul>
-                  <li><a href="">
-                      <h3>Payment</h3>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </a></li>
-                  <li><a href="">
-                      <h3>Connect</h3>
-                      <p> consectetur adipisicing elit nesciunt! Assumenda, adipisci.</p>
-                    </a></li>
-                  <li><a href="">
-                      <h3>Atlas</h3>
-                      <p> ipsum dolor sit amet, consectetur adipisicing elit. .</p>
-                    </a></li>
-                </ul>
-                <ul>
-                  <li><a href="">
-                      <h3>Subscription</h3>
-                      <p> Lorem ipsum dolor sit amet, consectetur </p>
-                    </a></li>
-                  <li><a href="">
-                      <h3>Relay</h3>
-                      <p> amet, consectetur adipisicing elit. Nisi, sequi!</p>
-                    </a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="bottom-section">
-              <ul>
-                <li><a href="">Payment</a></li>
-                <li><a href="">Connect</a></li>
-                <li><a href="">Atlas</a></li>
-                <li><a href="">Connect</a></li>
-                <li><a href="">Atlas</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown-menu" id="developer" data-sub="developer">
-          <div class="dropdown-menu__content">
-            <div class="top-section">
-              <div class="col-2">
-                <div>
-                  <h2 class="menu-title">Front End</h2>
-                  <ul>
-                    <li><a href="">Payment</a></li>
-                    <li><a href="">Connect</a></li>
-                    <li><a href="">Atlas</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 class="menu-title">Back End</h2>
-                  <ul>
-                    <li><a href="">Payment</a></li>
-                    <li><a href="">Connect</a></li>
-                    <li><a href="">Atlas</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="bottom-section info">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam officia molestias</p>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown-menu" data-sub="company">
-          <div class="dropdown-menu__content">
-            <div class="top-section">
-              <ul>
-                <li><a href="">Payment</a></li>
-                <li><a href="">Connect</a></li>
-                <li><a href="">Atlas</a></li>
-              </ul>
-            </div>
-            <div class="bottom-section">
-              <ul>
-                <li><a href="">Payment</a></li>
-                <li><a href="">Connect</a></li>
-                <li><a href="">Atlas</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <div class="arrows">
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+      <label for="slides_3"></label>
+      <label for="slides_4"></label>
+      <label for="slides_5"></label>
+      <label for="slides_6"></label>
+      <label class="goto-first" for="slides_1"></label>
+      <label class="goto-last" for="slides_6"></label>
+    </div>
+    <div class="navigation">
+      <div>
+        <label for="slides_1"></label>
+        <label for="slides_2"></label>
+        <label for="slides_3"></label>
+        <label for="slides_4"></label>
+        <label for="slides_5"></label>
+        <label for="slides_6"></label>
       </div>
     </div>
-  </header>
-  <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 
 </html>

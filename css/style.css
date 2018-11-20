@@ -2,7 +2,7 @@
  * @Author: schwarze_falke
  * @Date:   2018-11-19T20:44:43-06:00
  * @Last modified by:   schwarze_falke
- * @Last modified time: 2018-11-20T02:40:07-06:00
+ * @Last modified time: 2018-11-20T05:10:27-06:00
  */
 
 /* CSS Variables */
@@ -31,13 +31,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   color: #444;
 }
 
+.logo {
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+
 .btn {
   background-color: var(--dark);
-  color: var(--light);
+  color: var(--primary);
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
@@ -50,6 +60,23 @@ img {
 .wrapper {
   display: grid;
   grid-gap: 20px;
+}
+
+header {
+  position: inherit;
+  padding: center;
+  -webkit-transform-style: preserve3d;
+  transform-style: preserve3d;
+  -webkit-perspective: 3000px;
+  perspective: 3000px;
+}
+
+.main-header {
+  display: grid;
+  margin-top: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+  background: var(--light);
 }
 
 /* Top Container */
@@ -148,11 +175,14 @@ img {
 
 /* Footer */
 footer {
+  display: grid;
   margin-top: 2rem;
   background: var(--dark);
   color: var(--light);
   text-align: center;
-  padding: 1rem;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -8px;
 }
 
 /* Media Queries */
