@@ -3,10 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1, user-scalable=no">
   <title>QCI Ayuda ─ Mapa</title>
   <link rel="stylesheet" href="../css/library.css">
   <link rel="stylesheet" href="../css/master.css">
   <link rel="stylesheet" href="../css/subject.css">
+  <link rel="stylesheet" href="../css/map.css">
 </head>
 
 <body>
@@ -31,8 +33,8 @@
     </ul>
   </nav>
 
-
-  <div id="googleMap" style="width:100%;height:400px;margin: 30px;"></div>
+<div class="fondo">
+  <div id="googleMap" style="width:80%;height:400px;margin: 30px;"></div>
 
   <script>
     function myMap() {
@@ -44,6 +46,18 @@
       map.data.loadGeoJson('resources/map.json');
     }
   </script>
+
+  <div class="alinear">
+    <form class="" action="index.html" method="post">
+      En que edificio te encuentras?
+    <input type="text" name="" value="" class="textbox" placeholder="">
+    A que edificio te diriges?
+    <input type="text" name="" value="" class="textbox" placeholder="">
+    </form>
+
+  </div>
+</div>
+
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpJM4eS1Up-h7dBY-9eoDezjf3aO-gyfs&callback=myMap" async defer></script>
 </div>
