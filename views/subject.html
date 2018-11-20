@@ -5,28 +5,72 @@
     <link rel="stylesheet" href="../css/library.css">
     <link rel="stylesheet" href="../css/master.css">
     <link rel="stylesheet" href="../css/subject.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <title>Subject</title>
   </head>
   <body>
     <div class="container">
-      <nav class="nav-collapse" role="navigation">
-        <a class="brand" style="margin: 0; float: none; text-align:center" href="#">
-          <img src="../img/logo.png" /></a>
-        <ul class="tabs primary-nav">
-          <li class="tabs__item">
-            <a href="thread.html" class="tabs__link">Foro</a>
-          </li>
-          <li class="tabs__item">
-            <a href="map.html" class="tabs__link">Mapa del CU</a>
-          </li>
-          <li class="tabs__item">
-            <a href="subject.html" class="tabs__link">Horarios</a>
-          </li>
-          <li class="tabs__item">
-            <a href="#" class="tabs__link">Ayuda!</a>
-          </li>
+      <header class="main-header">
+        <a href="#"><img class="logo" src="../img/logo.png" alt="qci-ayuda" height="100"></a>
+        <ul class="menu">
+          <li class="menu__item" data-sub="forum"><a href="views/topic.html">Foro</a></li>
+          <li class="menu__item" data-sub="schedule"><a href="views/subject.html">Horarios</a></li>
+          <li data-sub="map"><a href="views/map.html">Mapa</a></li>
+          <li data-sub="about"><a href="#">Acerca del sitio</a></li>
         </ul>
-      </nav>
+        <div class="dropdown-holder">
+          <div class="dropdown__arrow"></div>
+          <div class="dropdown__bg">
+            <div class="dropdown__bg-bottom"></div>
+          </div>
+          <div class="dropdown__wrap">
+            <div class="dropdown-menu" id="forum" data-sub="forum">
+              <div class="dropdown-menu__content">
+                <div class="top-section">
+                  <div class="col-2">
+                    <ul>
+                      <li><a href="">
+                          <h3>Ayuda general</h3>
+                          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a></li>
+                      <li><a href="">
+                          <h3>Anuncios</h3>
+                          <p> consectetur adipisicing elit nesciunt! Assumenda, adipisci.</p>
+                        </a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="">
+                          <h3>Variados</h3>
+                          <p> Lorem ipsum dolor sit amet, consectetur </p>
+                        </a></li>
+                      <li><a href="">
+                          <h3>Recomendaciones</h3>
+                          <p> ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                        </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="bottom-section"></div>
+              </div>
+            </div>
+            <div class="dropdown-menu" id="schedule" data-sub="schedule">
+              <div class="dropdown-menu__content">
+                <div class="top-section">
+                  <div class="col-2">
+                    <div>
+                      <h2 class="menu-title">Por NRC</h2>
+                    </div>
+                    <div>
+                      <h2 class="menu-title">Por Carrera</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-section info"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <table>
         <tr>
           <th>Materia</th>
@@ -72,6 +116,6 @@
         <input class="btn_login" type="submit" id="send_btn" value="Send">
       </form>
     </div>
-
+<script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>
