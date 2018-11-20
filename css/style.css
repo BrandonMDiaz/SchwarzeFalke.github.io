@@ -2,14 +2,16 @@
  * @Author: schwarze_falke
  * @Date:   2018-11-19T20:44:43-06:00
  * @Last modified by:   schwarze_falke
- * @Last modified time: 2018-11-19T23:30:14-06:00
+ * @Last modified time: 2018-11-20T02:11:15-06:00
  */
 
 /* CSS Variables */
 :root {
-  --primary: #DDDDDD;
-  --dark: #333333;
-  --light: #FFFFFF;
+  --primary: rgba(237, 30, 111, 1);
+  --secondary: rgba(117, 119, 128, 1);
+  --highlight: rgba(239, 62, 54, 1);
+  --dark: rgba(7, 16, 19, 1);
+  --light: rgba(255, 255, 255, 1);
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -20,9 +22,16 @@ html {
 }
 
 body {
-  background: #CCCCCC;
-  margin: 30px 50px;
-  line-height: 1.4;
+  min-height: 100vh;
+  background: linear-gradient(90deg, var(--highlight), var(--primary));
+  font-family: karla;
+  color: #666;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444;
 }
 
 .btn {
@@ -124,4 +133,85 @@ img {
 
 .top-box-b {
   grid-area: top-box-b;
+}
+
+/* Boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+/* Information */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+/* Portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Media Queries */
+@@media(max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@@media(max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+  }
 }
