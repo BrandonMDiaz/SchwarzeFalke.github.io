@@ -2,7 +2,7 @@
  * @Author: schwarze_falke
  * @Date:   2018-11-20T01:59:23-06:00
  * @Last modified by:   schwarze_falke
- * @Last modified time: 2018-11-20T02:11:19-06:00
+ * @Last modified time: 2018-11-20T03:16:32-06:00
  */
  @import "https://fonts.googleapis.com/css?family=Karla";
  * {
@@ -19,8 +19,8 @@
  }
 
  header {
-   position: relative;
-   padding: 20px 0 0;
+   position: inherit;
+   padding: 0 0 0 460px;
    -webkit-transform-style: preserve3d;
            transform-style: preserve3d;
    -webkit-perspective: 3000px;
@@ -123,11 +123,11 @@
    opacity: 1;
  }
 
- #product .dropdown-menu__content {
+ #forum .dropdown-menu__content {
    width: 640px;
  }
 
- #developer .dropdown-menu__content {
+ #schedule .dropdown-menu__content {
    width: 400px;
  }
 
@@ -138,16 +138,16 @@
    flex: 1 0 150px;
  }
 
- #product .col-2 li {
+ #forum .col-2 li {
    display: block;
    padding: 20px 20px 10px;
  }
- #product .col-2 li h3 {
+ #forum .col-2 li h3 {
    font-size: 18px;
    margin: 0 0 10px;
    color: turquoise;
  }
- #product .col-2 li p {
+ #forum .col-2 li p {
    color: #999;
    margin: 0;
  }
